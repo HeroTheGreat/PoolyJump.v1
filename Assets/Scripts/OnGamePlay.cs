@@ -40,6 +40,7 @@ public class OnGamePlay : MonoBehaviour
         if (collider.tag=="EndCollider")
         {
             endgameMovement.EndPositionMovement();
+            Debug.Log("EndColliderHit!");
         }
     }
 

@@ -32,13 +32,14 @@ public class EndgameMovement : MonoBehaviour
 
     private void AvarageScoreToTransform()
     {
-        minValue = 1f / (drawSpawner.Points.Length * maxscore);
+        minValue = 2f / (drawSpawner.Points.Length * maxscore);
         betweenPositions = Vector3.Lerp(endPos1, endPos2, minValue * (float)avarageScore);
     }
 
     public void EndPositionMovement()
     {
-        this.gameObject.transform.DOMoveY(betweenPositions.y, 3);
+        this.gameObject.transform.DOMoveY(betweenPositions.y, 6);
+       
     }
     private void Update()
     {
